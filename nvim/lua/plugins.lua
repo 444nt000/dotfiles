@@ -20,6 +20,22 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/conform.nvim" },
 	{ src = "https://github.com/dawnbeen/c_formatter_42.git" },
 	{ src = "https://github.com/42paris/42header.git" },
+	{ src = "https://github.com/vyfor/cord.nvim.git" },
+})
+
+-- ===============================
+-- Discord
+-- ===============================
+
+require("cord").setup({
+	display = {
+		view = "editor",
+		theme = "default",
+		flavor = "accent",
+	},
+	editor = {
+		client = "neovim",
+	},
 })
 
 -- ===============================
