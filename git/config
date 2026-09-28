@@ -1,7 +1,7 @@
 # See https://git-scm.com/docs/git-config
 [user]
-	# name = [username]
-	# email = [email]
+	name = aradix
+	email = 444nt000@proton.me
 	signingkey = ~/.ssh/id_ed25519.pub
 [core]
 	editor = nvim
