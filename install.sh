@@ -31,6 +31,9 @@ if [ ! -d ~/.local/kitty.app ]; then
 fi
 
 # c_formatter_42
-command -v c_formatter_42 > /dev/null || pip3 install --user git+https://github.com/dawnbeen/c_formatter_42.git
+rm -rf ~/.local/share/c_formatter_42
+python3 -m venv ~/.local/share/c_formatter_42
+~/.local/share/c_formatter_42/bin/pip install -q git+https://github.com/dawnbeen/c_formatter_42.git
+ln -sf ~/.local/share/c_formatter_42/bin/c_formatter_42 ~/.local/bin/c_formatter_42
 
 echo "Done. Open a new terminal."
