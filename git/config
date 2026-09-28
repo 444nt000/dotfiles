@@ -1,0 +1,34 @@
+# See https://git-scm.com/docs/git-config
+[user]
+	# name = [username]
+	# email = [email]
+	signingkey = ~/.ssh/id_ed25519.pub
+[core]
+	editor = nvim
+[commit]
+	gpgsign = true
+	verbose = true
+[gpg]
+	format = ssh
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = -version:refname
+[rerere]
+	enabled = true
+	autoupdate = true
